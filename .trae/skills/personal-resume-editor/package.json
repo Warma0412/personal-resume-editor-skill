@@ -1,0 +1,19 @@
+{
+  "name": "personal-resume-editor-skill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "init": "node scripts/init-resume.mjs",
+    "validate": "node scripts/validate-html.mjs",
+    "export": "node scripts/export-pdf.mjs",
+    "verify:package": "node scripts/verify-package.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "playwright-core": "^1.60.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "bytedance": {
+    "name": "字节跳动",
+    "aliases": ["ByteDance", "字节", "字节跳动有限公司"],
+    "logo": "assets/logos/ByteDance.svg",
+    "color": "#3C8CFF",
+    "softColor": "#EDF3FF"
+  },
+  "bilibili": {
+    "name": "哔哩哔哩",
+    "aliases": ["Bilibili", "B站", "哔哩哔哩股份有限公司"],
+    "logo": "assets/logos/Bilibili.svg",
+    "color": "#FB7299",
+    "softColor": "#FFF0F5"
+  },
+  "huawei": {
+    "name": "华为",
+    "aliases": ["Huawei", "华为技术有限公司"],
+    "logo": "assets/logos/Huawei.svg",
+    "color": "#C7000B",
+    "softColor": "#FFF0F1"
+  },
+  "kuaishou": {
+    "name": "快手",
+    "aliases": ["Kuaishou", "北京快手科技有限公司"],
+    "logo": "assets/logos/Kuaishou.svg",
+    "color": "#FF4906",
+    "softColor": "#FFF1EB"
+  },
+  "meituan": {
+    "name": "美团",
+    "aliases": ["Meituan", "北京三快在线科技有限公司"],
+    "logo": "assets/logos/Meituan.svg",
+    "color": "#FFC300",
+    "softColor": "#FFF8D8"
+  }
+}

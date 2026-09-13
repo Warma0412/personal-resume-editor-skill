@@ -1,0 +1,8 @@
+.DS_Store
+**/node_modules/
+
+.trae/skills/personal-resume-editor/output/*
+!.trae/skills/personal-resume-editor/output/.gitkeep
+
+.trae/skills/personal-resume-editor/working/*
+!.trae/skills/personal-resume-editor/working/.gitkeep

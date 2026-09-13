@@ -1,0 +1,266 @@
+:root {
+  --page-width: 794px;
+  --page-height: 1123px;
+  --accent: #1768e5;
+  --ink: #171717;
+  --muted: #5f6672;
+  --line: #b8c7dc;
+  --screen-bg: #e9eef5;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond Local";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../assets/fonts/eb-garamond-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond Local";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../../assets/fonts/eb-garamond-semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "EB Garamond Local";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../../assets/fonts/eb-garamond-bold.woff2") format("woff2");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: var(--screen-bg);
+  color: var(--ink);
+  font-family: "EB Garamond Local", "PingFang SC", "Helvetica Neue", sans-serif;
+  font-size: 13.5px;
+  line-height: 1.28;
+}
+
+.toolbar {
+  color: #475467;
+  font-family: "PingFang SC", sans-serif;
+  font-size: 12px;
+  padding: 12px;
+  text-align: center;
+}
+
+.resume-book {
+  margin: 0 auto 28px;
+  width: var(--page-width);
+}
+
+.resume-page {
+  background: #fff;
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.14);
+  height: var(--page-height);
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 34px 42px;
+  width: var(--page-width);
+}
+
+.profile-header {
+  border-bottom: 2px solid #172033;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+}
+
+.name-row {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.name-row h1 {
+  font-family: "PingFang SC", sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 0;
+}
+
+.target-role {
+  color: #303744;
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.contact-row {
+  color: #303744;
+  margin: 7px 0 0;
+}
+
+.profile-summary {
+  margin: 6px 0 0;
+}
+
+.profile-with-photo {
+  align-items: center;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) 72px;
+}
+
+.profile-copy {
+  min-width: 0;
+}
+
+.profile-photo {
+  border: 1px solid #d5dae2;
+  display: block;
+  height: 88px;
+  object-fit: cover;
+  object-position: center;
+  width: 72px;
+}
+
+.resume-section {
+  margin-top: 11px;
+}
+
+.resume-section h2 {
+  border-bottom: 1.5px solid var(--accent);
+  color: var(--accent);
+  font-family: "PingFang SC", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.15;
+  margin: 0 0 7px;
+  padding-bottom: 3px;
+}
+
+.entry-heading {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.entry-heading strong {
+  font-size: 14.5px;
+}
+
+.entry-heading span {
+  color: var(--muted);
+  flex: 0 0 auto;
+  font-weight: 600;
+}
+
+.education-entry p {
+  margin: 3px 0 0;
+}
+
+.role-card {
+  margin-top: 9px;
+}
+
+.role-card:first-of-type {
+  margin-top: 0;
+}
+
+.role-banner {
+  align-items: center;
+  background: var(--brand-soft);
+  border-left: 4px solid var(--brand);
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  min-height: 38px;
+  padding: 3px 9px;
+}
+
+.role-banner img {
+  display: block;
+  height: 28px;
+  object-fit: contain;
+  width: 28px;
+}
+
+.role-banner strong {
+  font-size: 14.5px;
+  font-weight: 700;
+}
+
+.role-banner span {
+  color: #303744;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.role-content,
+.project-entry {
+  padding: 5px 4px 0 5px;
+}
+
+.role-content h3 {
+  color: #173a86;
+  font-size: 14.5px;
+  line-height: 1.2;
+  margin: 0 0 3px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 19px;
+}
+
+li {
+  margin: 2px 0;
+  padding-left: 1px;
+}
+
+.skills-list {
+  columns: 1;
+}
+
+.skills-list li {
+  break-inside: avoid;
+}
+
+@page {
+  margin: 0;
+  size: 210mm 297mm;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .toolbar {
+    display: none;
+  }
+
+  .resume-book {
+    margin: 0;
+  }
+
+  .resume-page {
+    break-after: page;
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+  }
+
+  .resume-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+}
